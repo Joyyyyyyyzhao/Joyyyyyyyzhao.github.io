@@ -1,183 +1,104 @@
 <html>
 	<head>
-		<title>CNN</title>
-		<meta content="this webside is for ICS3U"name="description">
-		<meta content="ics3u,suon,canada,tronto"name="keyword">
+		<title>first page</title>
+		<meta contect="this website is about different kinds of music"name="discription">
+		<meta contect="Jazz,R&B"name="keyword">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
-		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
 		<!-- the code above was about the new google fonts-->
 		<style>
 			/*internal CSS here*/
-			body{
-				background-image: url(https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/w_596,c_limit,q_auto:best,f_auto/fc/3034007-inline-i-applelogo.jpg);
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-position: right top;
-				background-color: lightgoldenrodyellow;
+			#music{
+				text-shadow: 4px 4px 5px dimgrey;
 			}
-			#change{
-				text-align: center;
-				vertical-align: text-top;
-				text-transform: lowercase;
-				text-decoration: overline;
-				text-indent: 50px;
-				letter-spacing: 10px;
-				line-height: 50px;
-				text-shadow: 2px 2px 3px orangered;
-					/*Horizontal Vertical Blurry Color*/
-				font-size: italic;
-				font-weight: bold;
-				border-style: solid;
-			}
-			#myborder{
-				border: 5px double green;
-			} 
 			table,th,td{
 				border: 1px solid black;
 			}
-			.demo{
-				color: blue;
-				text-transform: lowercase;
+			.size{
+				font-size: 150%;
 			}
-			#demo{
-				font-size: 200%;
+			body{
+				background-image: url(2.png);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: right top;
+				background-size: 250px 100px;
+			}
+			.colume{
+				float: left;
+				width: 33.33%;
 				text-align: center;
-				border: 10px dotted red;
-				border-width: 10px;
 			}
-			/*border styles:
-			solid,double,botted,inset,outset,hidden,groove,ridge;*/
+			.colume:hover{
+				color: red;
+			}
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				float: left;
+			}
+			li a{
+				text-decoration: none;
+				color: dimgray;
+				margin-right: 160px;
+				margin-left: 160px;
+				font-size: 160%;
+				text-align: center;
+			}
+			li a:hover{
+			
+				color: red;
+			}
 		</style>
 	</head>
-	<body>
-		&#128520
-		<p id="change">this is a demo</p>
-		<p id="myborder">border</p>
+	<body style="background-color: #dedede;">
+		<center><p id="music" style="font-size: 5em;font-family: Anton;">Music</p></center><hr>
+		<center><h1 style="font-family: Comfortaa;">There are many different kinds of music</h1>
+		<h2 style="font-family: Comfortaa;">R&B</h2>
+		<h3 style="font-family: Comfortaa;">Jazz</h3>
+		<h4 style="font-family: Comfortaa;">Rap</h4>
+		<h5 style="font-family: Comfortaa;">Country</h5>
+		<h6 style="font-family: Comfortaa;">Hip-hop</h6></center>
+		<center><p style="font-family: Comfortaa;"><strong>First, give your own answers to the following questions</strong></p></center>
 
-		<form action>
-			<label class="newcolor "for='fname'>First Name</label>
+		<center><form action style="font-family: Comfortaa;">
+			<label for='fname'>First Name</label>
 			<input type="text" name="fname"><br>
 			<label for='lname'>Last Name</label>
 			<input type="text" name="lname"><br>
-			<input type="radio" name='language'>
-			<label for="English">English</label>
-			<input type="radio" name='language'>
-			<label for="French">French</label><br>
-			<label>select your fav. car brand:</label><br>
-			<input type="checkbox" name="Mercedes">
-			<label for="merc">Mercedes</label>
-			<input type="checkbox" name="BMW">
-			<label for="BMW">BMW</label>
-			<input type="checkbox" name="Audi">
-			<label for="Audi">Audi</label>
-			<label for="color">choose your color:</label>
-			<input type="color">
-			<label for="month">what's your birth month?</label>
-			<input type="month">
-
+			<label>Choose your favorite type of music:</label><br>
+			<input type="checkbox" name="R&B">
+			<label for="R&B">R&B</label>
+			<input type="checkbox" name="Jazz">
+			<label for="Jazz">Jazz</label>
+			<input type="checkbox" name="Rap">
+			<label for="Rap">Rap</label>
+			<input type="checkbox" name="Country">
+			<label for="Country">Country</label>
+			<input type="checkbox" name="Hip-hop">
+			<label for="Hip-hop">Hip-hop</label>
+			<input type="checkbox" name="Other">
+			<label for="Other">Other</label><br>
+			<label>Who is your favorite singer:</label><br>
+			<label for='favorite-singer'>Favorite singer</label>
+			<input type="text" name="favorite-singer"><br>
 			<input type="submit">
-		</form>
-
-		<ul>
-			<li id="one">banana</li>
-			<li>apple</li>
-			<li>orange</li>
-		</ul>
-		<ol>
-			<li>banana</li>
-			<li>apple</li>
-			<li>orange</li>
-		</ol>
+		</form></center><hr>
 
 
-		<table>
-			<tr>
-				<th>Name</th>
-				<th>Gender</th>
-				<th>Age</th>
-				<th>Grade</th>
-			</tr>
-			<tr>
-				<td class="newcolor">Joy</td>
-				<td>Female</td>
-				<td>17</td>
-				<td>11</td>
-			</tr>
-			<tr>
-				<td>Mabel</td>
-				<td>Female</td>
-				<td>16</td>
-				<td>11</td>
-			</tr>
-			<tr>
-				<td>Jin</td>
-				<td>Female</td>
-				<td>16</td>
-				<td>11</td>
-			</tr>
-		</table>
-		<a href="https://www.google.ca/"><img src="https://i2.wp.com/www.silocreativo.com/en/wp-content/uploads/2015/10/analysis-new-google-logo-redesign.png" width="200px" height="100px"></a>
-
-		<p><a href="file:///Users/mac/Desktop/ICS3U/new%20page.html"> go to a new page</a></p>
-
-		<p><b>welcom to ICS3U</b></p><hr>
-		<p><i>this is the second line</i></p>
-		<p>welcome to ICS3U</p>
-		<p><strong>welcom to ICS3U</strong></p><hr>
-		<p><em>this is the second line</em></p>
-		<p>welcom <sub>to</sub> ICS3U</p><hr>
-
-		<center><img src="1.jpeg" width="500px" height="500px"></center><br>
-
-		<img src="https://www.loveandoliveoil.com/wp-content/uploads/2015/03/soy-sauce-noodlesH2.jpg" width="500px" height="500px" alt="this is a noodles image">
-
-		<center><h1>hello👋</h1>
-		<h2>你还在看吗🤔️</h2>
-		<h3>还看？！😠</h3>
-		<h4>就离谱🤯</h4>
-		<h5>你马上就看不见了👀</h5>
-		<h6>你看不见了🙈</h6></center>
-
-
-		<h1>hello👋</h1>
-		<h2>你还在看吗🤔️</h2>
-		<h3>还看？！😠</h3>
-		<h4>就离谱🤯</h4>
-		<h5>你马上就看不见了👀</h5>
-		<h6>你看不见了🙈</h6>
-
-		<p>2<sup>hello<sup></p>
-		<p>2<sub>hello<sub></p>
-		<del>hello</del>
-		<mark>hello</mark>
-		<ins>hello</ins>
-		<a Herf=""> hello</a>
-		<small>small font </small>
-		<p>regular</p>
-
-		<iframe width="950" height="534" src="https://www.youtube.com/embed/PG0AjlLq7Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<video width="500px" height="350px"controls>
-			<source src="50655.mp4" type="video/mp4">
-		</video>
-		<audio controls autoplay style="width:1000px;"hidden>
-			<source src="1.mp3" type="audio/mp3" autostart="ture" loop="false">
-		</audio>
-
-
-		<p class="demo">hello</p>
-		<p id="demo">hello</p>
-		<h1 class="demo">hello</h1>
-
-
-
+		<div class="colume"><img src="https://images.saymedia-content.com/.image/t_share/MTc4NzcyMTMzODg1NzgxNTEx/10-reasons-why-i-love-music.jpg" width="250px" height="250px"><a href="file:///Users/mac/Desktop/Joy%20cs%20assignment/first%20joy.html"><p class="size" style="color: dimgray;font-family: Comfortaa;">Home</p></a></div>
+		<div class="colume"><img src="https://static.roland.com/assets/images/products/gallery/rc_sdz078_classic_r_b_essentials_gal.jpg" width="250px" height="250px"><a href="file:///Users/mac/Desktop/Joy%20cs%20assignment/R&B%20joy.html"><p class="size" style="color: dimgray;font-family: Comfortaa;">R&B</p></a></div>
+		<div class="colume"><img src="https://i.guim.co.uk/img/media/78bd648c32e0c2385ac3fd7a31ae5a42feb8d2b3/0_52_2812_1687/master/2812.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d3bbe1321555708cea5e5ddb0c30eb64"width="250px" height="250px"><a href="file:///Users/mac/Desktop/Joy%20cs%20assignment/Jazz%20joy.html"><p class="size" style="color: dimgray;font-family: Comfortaa;">Jazz</p></a></div>
+		
 
 	</body>
 </html>
-
-
-
-
 
 
